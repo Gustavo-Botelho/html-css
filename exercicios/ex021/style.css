@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    background-color: lightgray;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.300); /*deslocamento horizontal, deslocamento vertical, desfoque, espalhamento, cor. Pegar essa info do dev tool do chrome depois de verificar como fica melhor*/
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px; /*top left, top right, bottom right, bottom left OU apenas um valor e todos serao iguais*/
+}
+
+article{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+article > aside{
+    background-color: rgb(165,165,165);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p{ /*p é filho de footer (todo p que tiver dentro de footer vai ter essa configuracao */
+    margin: 0px;
+}
